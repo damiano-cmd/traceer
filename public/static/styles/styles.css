@@ -1,0 +1,479 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    font-family: Tahoma, sans-serif;
+}
+
+/* navigation */
+
+.nav {
+    z-index: 3;
+    position: fixed;
+    width: 100%;
+    height: 55px;
+    background-color: rgb(0, 102, 255);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav div, img {
+    margin: 0 15px;
+}
+
+.nav .JD {
+    border-radius: 10px;
+    background-color: rgb(233, 233, 233);
+}
+
+.nav div {
+    display: flex;
+    align-items: center;
+}
+
+.nav div button {
+    border: 0;
+    margin: 0 5px;
+    border-radius: 10px;
+
+    width: 60px;
+    height: 35px;
+
+    color: rgb(243, 243, 243);
+    background-color: rgb(17, 212, 226);
+}
+
+#logot {
+    position: fixed;
+    background-color: rgb(7, 98, 233);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    right: 0;
+    z-index: 2 ;
+    transition: top 400ms;
+    border-radius: 0 0 9px 9px;
+}
+
+#logot button {
+    border: 0;
+    margin: 15px;
+    border-radius: 10px;
+
+    width: 100px;
+    height: 35px;
+
+    color: rgb(243, 243, 243);
+    background-color: rgb(17, 212, 226);
+}
+
+#logot img {
+    margin: 10px;
+}
+
+
+
+
+/* main bildbord */
+
+.mainbb {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(20, 20, 20);
+}
+
+.mainbb .lt {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(153deg, rgba(30,97,186,0.8) 0%, rgba(0,0,0,0.8) 100%);
+}
+
+.mainbb .lt section {
+    position: absolute;
+    color: azure;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.mainbb .lt div {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.mainbb button {
+    border: 0;
+    border-radius: 10px;
+    margin: 10px;
+    width: 90px;
+    height: 40px;
+    color: azure;
+    background-color: rgb(115, 230, 0);
+}
+
+.mainbb img {
+    position: relative;
+    width: 100%;
+    margin: 0;
+    min-height: 820px;
+    min-width: 1460px;
+}
+
+
+
+
+
+/* SubSummery */
+
+.subsum {
+    background-color: rgb(19, 19, 19);
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.subsum h1, .p {
+    max-width: 450px;
+    padding: 40px 10px;
+    margin: 0;
+    color: rgb(231, 231, 231);
+}
+
+
+
+
+
+
+/* footer */
+.footer {
+    background-color: rgb(12, 12, 12);
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer h2, .p {
+    padding: 20px 0;
+    margin: 0;
+    color: rgb(231, 231, 231);
+}
+
+
+
+
+
+
+/* form */
+
+.form {
+    position: relative;
+    background-color: rgb(19, 19, 19);
+    width: 100%;
+    height: 100vh;
+    min-height: 700px;
+    margin: 0;
+}
+
+.form form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    background-color: rgb(0, 98, 209);
+    padding: 20px;
+}
+
+.form form label {
+    color: rgb(207, 207, 207);
+    font-size: 20px;
+    text-align: center;
+    max-width: 350px;
+}
+
+.form form div {
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 0;
+    
+    color: rgb(207, 207, 207);
+}
+
+.form form div label {
+    font-size: 15px;
+}
+
+.form form input {
+    border: 0;
+    width: 250px;
+    margin: 0;
+}
+
+.form form button {
+    width: 80px;
+    height: 40px;
+    margin: 0 10px;
+    border: 0;
+    border-radius: 10px;
+    color: rgb(228, 228, 228);
+    background-color: rgb(0, 197, 0);
+}
+
+.form .check {
+    width: 30px;
+}
+
+
+
+
+
+/* terminal */
+
+.terminal {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(238, 238, 238);
+    min-height: 525px;
+}
+
+
+
+
+/* urls page */
+
+.output {
+    width: 70%;
+    margin: 0 5%;
+    min-height: 80vh;
+    padding-bottom: 100px;
+    padding-top: 100px;
+    min-width: 300px;
+}
+
+
+
+
+/* navig */
+
+.navig {
+    width: 20%;
+    min-width: 200px;
+    height: 100vh;
+    padding: 40px 0 50px 0;
+    background-color: rgb(216, 216, 216);
+    text-align: center;
+}
+
+.navig h2 {
+    margin: 50px 0;
+}
+
+.navig div {
+    position: relative;
+    width: 100%;
+    height: 70px;
+    background-color: rgb(216, 216, 216);
+}
+
+.navig hr{
+    background-color:  rgb(200, 200, 200);
+    height: 1px;
+    border: 0;
+    margin: 0;
+}
+
+.navig div:hover {
+    background-color: rgb(190, 190, 190);
+}
+
+.navig div:active {
+    background-color: rgb(172, 172, 172);
+}
+
+.navig a {
+    text-decoration: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    color: rgb(0, 0, 0);
+}
+
+
+
+
+
+/* output terminal */
+
+.ot {
+    position: relative;
+    text-align: center;
+}
+
+.ot button {
+    border: 0;
+    border-radius: 5px;
+    font-weight: 600;
+    color: rgb(241, 241, 241);
+    width: 120px;
+    height: 30px;
+    margin: 5px;
+    background-color: rgb(20, 219, 20);
+}
+
+.yellowButton {
+    background-color: rgb(230, 179, 13);
+    border-radius: 10px;
+    margin: 10px 30px;
+    padding: 5px;
+    font-size: 15px;
+    color: rgb(19, 19, 19);
+    width: 48px;
+    height: 48px;
+}
+
+.redButton {
+    background-color: rgba(0, 0, 0, 0) !important;
+}
+
+.greenbut {
+    background-color: rgb(20, 219, 20) !important;
+}
+
+
+.hr {
+    background-color: rgb(194, 194, 194);
+    height: 1px;
+    border: 0;
+}
+
+.dt {
+    color: rgb(19, 19, 19);
+    width: 70%;
+    margin: auto 15%;
+}
+
+
+
+/* urls */
+
+.urls p {
+    color: rgb(19, 19, 19);
+}
+
+
+.urls article {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    border-radius: 5px;
+    margin: 5px 0;
+    background-color: rgb(218, 218, 218);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+} 
+
+.urls .delBut {
+    background-color: rgb(230, 18, 18);
+    color: rgb(226, 226, 226);
+    font-weight: 600;
+}
+
+.urls article a {
+    text-decoration: none;
+    color: rgb(19, 19, 19);
+}
+
+
+
+
+
+
+/* Shorten */
+
+.short {
+    position: relative;
+}
+
+.short input {
+    border: 0;
+    border-radius: 4px;
+    height: 20px;
+    width: 600px;
+    margin: 5px;
+}
+
+
+
+
+
+
+/* Account */
+
+.custom form div {
+    margin: 20px;
+}
+
+.custom p {
+    color: rgb(19, 19, 19);
+}
+
+.custom form input {
+    border: 1px solid rgb(7, 7, 7);
+}
+
+
+
+
+
+
+
+/* some taributes */
+
+.red-text {
+    color: rgb(211, 15, 15);
+}
+
+
+@media only screen and (max-width: 1300px) {
+    .output {
+        width: 95%;
+        height: auto;
+        min-height: 200px;
+        padding-top: 0;
+        margin: 0 5vw;
+    }
+    .navig {
+        width: 100%;
+        height: 80vh;
+    }
+    .short input {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .mainbb img {
+        left: -50%;
+    }
+    .dt {
+        width: 100%;
+        margin: 0;
+    }
+}
+
+@media only screen and (max-width: 1460px) {
+    .mainbb img {
+        width: auto;
+        height: 100%;
+    }
+}
